@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		AF10E16A1BF6372C00750651 /* Alamofire.framework.dSYM in Copy Carthage Debug Symbol Files (1 item) */ = {isa = PBXBuildFile; fileRef = AF10E1681BF6372C00750651 /* Alamofire.framework.dSYM */; };
 		AF10E16B1BF6372C00750651 /* StarzLegal.framework.dSYM in Copy Carthage Debug Symbol Files (1 item) */ = {isa = PBXBuildFile; fileRef = AF10E1691BF6372C00750651 /* StarzLegal.framework.dSYM */; };
+		AF10E16D1BF6522300750651 /* TermsOfServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF10E16C1BF6522300750651 /* TermsOfServiceViewController.swift */; };
+		AF10E16F1BF6536C00750651 /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF10E16E1BF6536C00750651 /* PrivacyPolicyViewController.swift */; };
 		AF4EE0C51BF4EEC4004FDE95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4EE0C41BF4EEC4004FDE95 /* AppDelegate.swift */; };
 		AF4EE0C71BF4EEC4004FDE95 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4EE0C61BF4EEC4004FDE95 /* FirstViewController.swift */; };
 		AF4EE0C91BF4EEC4004FDE95 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4EE0C81BF4EEC4004FDE95 /* SecondViewController.swift */; };
@@ -36,6 +38,8 @@
 /* Begin PBXFileReference section */
 		AF10E1681BF6372C00750651 /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Alamofire.framework.dSYM; path = Carthage/Build/tvOS/Alamofire.framework.dSYM; sourceTree = "<group>"; };
 		AF10E1691BF6372C00750651 /* StarzLegal.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = StarzLegal.framework.dSYM; path = Carthage/Build/tvOS/StarzLegal.framework.dSYM; sourceTree = "<group>"; };
+		AF10E16C1BF6522300750651 /* TermsOfServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsOfServiceViewController.swift; sourceTree = "<group>"; };
+		AF10E16E1BF6536C00750651 /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
 		AF4EE0C11BF4EEC4004FDE95 /* StarzSettings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarzSettings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF4EE0C41BF4EEC4004FDE95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF4EE0C61BF4EEC4004FDE95 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +89,8 @@
 				AF4EE0C61BF4EEC4004FDE95 /* FirstViewController.swift */,
 				AF4EE0C81BF4EEC4004FDE95 /* SecondViewController.swift */,
 				AF4EE0D51BF4F0C2004FDE95 /* FAQViewController.swift */,
+				AF10E16C1BF6522300750651 /* TermsOfServiceViewController.swift */,
+				AF10E16E1BF6536C00750651 /* PrivacyPolicyViewController.swift */,
 				AF4EE0CA1BF4EEC4004FDE95 /* Main.storyboard */,
 				AF4EE0D71BF4F282004FDE95 /* Assets.xcassets */,
 				AF4EE0CF1BF4EEC4004FDE95 /* Info.plist */,
@@ -199,7 +205,9 @@
 				AF4EE0C91BF4EEC4004FDE95 /* SecondViewController.swift in Sources */,
 				AF4EE0D61BF4F0C2004FDE95 /* FAQViewController.swift in Sources */,
 				AF4EE0C51BF4EEC4004FDE95 /* AppDelegate.swift in Sources */,
+				AF10E16F1BF6536C00750651 /* PrivacyPolicyViewController.swift in Sources */,
 				AF4EE0C71BF4EEC4004FDE95 /* FirstViewController.swift in Sources */,
+				AF10E16D1BF6522300750651 /* TermsOfServiceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

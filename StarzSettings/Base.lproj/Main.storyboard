@@ -110,11 +110,87 @@
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="KEM-79-rt4" kind="relationship" relationship="viewControllers" id="wzn-O6-1s5"/>
+                        <segue destination="GiB-PN-sFB" kind="relationship" relationship="viewControllers" id="S4w-Qy-lIc"/>
+                        <segue destination="mfn-cm-MiZ" kind="relationship" relationship="viewControllers" id="dzm-gO-DVY"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--Terms of Service-->
+        <scene sceneID="GSX-YF-oLx">
+            <objects>
+                <viewController id="GiB-PN-sFB" customClass="TermsOfServiceViewController" customModule="StarzSettings" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mhl-cS-kfQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="BfJ-KB-GEZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Yt-a1-G4L">
+                        <rect key="frame" x="0.0" y="140" width="1920" height="940"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0AR-zJ-gFb">
+                                <rect key="frame" x="20" y="8" width="1880" height="924"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <animations/>
+                        <constraints>
+                            <constraint firstItem="0AR-zJ-gFb" firstAttribute="top" secondItem="Mhl-cS-kfQ" secondAttribute="bottom" constant="8" symbolic="YES" id="2uu-Ln-Saq"/>
+                            <constraint firstItem="BfJ-KB-GEZ" firstAttribute="top" secondItem="0AR-zJ-gFb" secondAttribute="bottom" constant="8" symbolic="YES" id="FfF-hj-3uR"/>
+                            <constraint firstItem="0AR-zJ-gFb" firstAttribute="leading" secondItem="5Yt-a1-G4L" secondAttribute="leadingMargin" id="GCl-9Z-MVL"/>
+                            <constraint firstItem="0AR-zJ-gFb" firstAttribute="trailing" secondItem="5Yt-a1-G4L" secondAttribute="trailingMargin" id="QO0-yB-ZFy"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Terms of Service" id="bN2-fM-XcD"/>
+                    <connections>
+                        <outlet property="textView" destination="0AR-zJ-gFb" id="Jr2-Ww-93X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YNN-p1-WQO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2913" y="2133"/>
+        </scene>
+        <!--Privacy Policy-->
+        <scene sceneID="Lp9-wf-M9a">
+            <objects>
+                <viewController id="mfn-cm-MiZ" customClass="PrivacyPolicyViewController" customModule="StarzSettings" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="blG-UN-98d"/>
+                        <viewControllerLayoutGuide type="bottom" id="GJI-Y8-h1u"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e3u-TU-U1C">
+                        <rect key="frame" x="0.0" y="140" width="1920" height="940"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVr-nH-ha9">
+                                <rect key="frame" x="20" y="8" width="1880" height="924"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <animations/>
+                        <constraints>
+                            <constraint firstItem="sVr-nH-ha9" firstAttribute="leading" secondItem="e3u-TU-U1C" secondAttribute="leadingMargin" id="PIT-z6-qdV"/>
+                            <constraint firstItem="sVr-nH-ha9" firstAttribute="top" secondItem="blG-UN-98d" secondAttribute="bottom" constant="8" symbolic="YES" id="ljX-kW-EQl"/>
+                            <constraint firstItem="sVr-nH-ha9" firstAttribute="trailing" secondItem="e3u-TU-U1C" secondAttribute="trailingMargin" id="pCu-Vg-EzK"/>
+                            <constraint firstItem="GJI-Y8-h1u" firstAttribute="top" secondItem="sVr-nH-ha9" secondAttribute="bottom" constant="8" symbolic="YES" id="teb-pz-R9I"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Privacy Policy" id="Eee-nv-uZO"/>
+                    <connections>
+                        <outlet property="textView" destination="sVr-nH-ha9" id="rq7-nG-Jtl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RLb-IB-YX5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2943" y="3507"/>
         </scene>
         <!--FAQ-->
         <scene sceneID="SlA-CW-Hcf">
