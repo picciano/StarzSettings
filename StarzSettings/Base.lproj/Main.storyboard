@@ -236,8 +236,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="FAQ" id="V2M-mK-r0x"/>
                     <connections>
-                        <outlet property="faqTextView" destination="SZW-xn-krp" id="1Rn-Bn-7xE"/>
                         <outlet property="tableView" destination="jve-SJ-0oT" id="QIh-W9-0t8"/>
+                        <outlet property="textView" destination="SZW-xn-krp" id="PCs-oE-CBk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wd0-Tn-J8M" userLabel="First Responder" sceneMemberID="firstResponder"/>

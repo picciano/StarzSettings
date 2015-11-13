@@ -15,6 +15,9 @@ class PrivacyPolicyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.textView.selectable = true
+        self.textView.panGestureRecognizer.allowedTouchTypes = [UITouchType.Indirect.rawValue]
 
         PrivacyPolicy.sharedInstance.loadPrivacyPolicyText { (result, error) -> Void in
             if let result = result {

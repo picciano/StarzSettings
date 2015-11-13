@@ -12,7 +12,7 @@ import StarzLegal
 class FAQViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var faqTextView: UITextView!
+    @IBOutlet weak var textView: UITextView!
     
     var faqs:Array<Section>?
     
@@ -20,7 +20,8 @@ class FAQViewController: UIViewController {
         super.viewDidLoad()
         
         self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        self.faqTextView.panGestureRecognizer.allowedTouchTypes = [UITouchType.Indirect.rawValue]
+        self.textView.selectable = true
+        self.textView.panGestureRecognizer.allowedTouchTypes = [UITouchType.Indirect.rawValue]
         
         FAQ.sharedInstance.loadFAQs { (result, error) -> Void in
             if let result = result {
@@ -33,7 +34,7 @@ class FAQViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        self.faqTextView.becomeFirstResponder()
+        self.textView.becomeFirstResponder()
     }
 
     func updateView() {
@@ -45,13 +46,13 @@ class FAQViewController: UIViewController {
     }
     
     func updateText(section: Section) {
-        self.faqTextView.text = ""
+        self.textView.text = ""
         
         for question in section.questions! {
-            self.faqTextView.text.appendContentsOf(question.question!)
-            self.faqTextView.text.appendContentsOf("\n\n")
-            self.faqTextView.text.appendContentsOf(question.answer!)
-            self.faqTextView.text.appendContentsOf("\n\n")
+            self.textView.text.appendContentsOf(question.question!)
+            self.textView.text.appendContentsOf("\n\n")
+            self.textView.text.appendContentsOf(question.answer!)
+            self.textView.text.appendContentsOf("\n\n")
         }
     }
     

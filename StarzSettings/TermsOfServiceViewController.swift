@@ -16,6 +16,9 @@ class TermsOfServiceViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.textView.selectable = true
+        self.textView.panGestureRecognizer.allowedTouchTypes = [UITouchType.Indirect.rawValue]
 
         TermsOfService.sharedInstance.loadTermsOfServiceText { (result, error) -> Void in
             if let result = result {
