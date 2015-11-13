@@ -128,35 +128,40 @@
                         <rect key="frame" x="0.0" y="140" width="1920" height="940"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="L55-4X-0C8">
-                                <rect key="frame" x="20" y="20" width="456" height="900"/>
-                                <animations/>
-                            </stackView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZW-xn-krp">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SZW-xn-krp">
                                 <rect key="frame" x="484" y="20" width="1416" height="900"/>
                                 <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="1416" id="Mx9-F9-aeg"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="66" sectionHeaderHeight="40" sectionFooterHeight="40" translatesAutoresizingMaskIntoConstraints="NO" id="jve-SJ-0oT">
+                                <rect key="frame" x="20" y="8" width="456" height="924"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="456" id="EoL-oj-NC8"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="KEM-79-rt4" id="LZJ-d4-TjF"/>
+                                    <outlet property="delegate" destination="KEM-79-rt4" id="BMg-Ts-6s8"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <animations/>
                         <constraints>
-                            <constraint firstItem="L55-4X-0C8" firstAttribute="top" secondItem="5fc-mp-M6f" secondAttribute="top" constant="20" symbolic="YES" id="2yR-xP-X8X"/>
-                            <constraint firstAttribute="bottom" secondItem="L55-4X-0C8" secondAttribute="bottom" constant="20" symbolic="YES" id="7MR-GZ-XhU"/>
-                            <constraint firstItem="SZW-xn-krp" firstAttribute="trailing" secondItem="5fc-mp-M6f" secondAttribute="trailingMargin" id="832-xH-fWW"/>
-                            <constraint firstItem="SZW-xn-krp" firstAttribute="leading" secondItem="L55-4X-0C8" secondAttribute="trailing" constant="8" symbolic="YES" id="Brr-2g-ecS"/>
-                            <constraint firstItem="L55-4X-0C8" firstAttribute="top" secondItem="SZW-xn-krp" secondAttribute="top" id="JSt-QW-zUe"/>
-                            <constraint firstItem="L55-4X-0C8" firstAttribute="bottom" secondItem="SZW-xn-krp" secondAttribute="bottom" id="Pjg-0i-8vn"/>
-                            <constraint firstItem="L55-4X-0C8" firstAttribute="leading" secondItem="5fc-mp-M6f" secondAttribute="leadingMargin" id="uXv-Ur-Uik"/>
+                            <constraint firstItem="SZW-xn-krp" firstAttribute="leading" secondItem="jve-SJ-0oT" secondAttribute="trailing" constant="8" symbolic="YES" id="0ZK-72-K7M"/>
+                            <constraint firstItem="jve-SJ-0oT" firstAttribute="centerY" secondItem="SZW-xn-krp" secondAttribute="centerY" id="942-Sw-w2X"/>
+                            <constraint firstItem="jve-SJ-0oT" firstAttribute="leading" secondItem="5fc-mp-M6f" secondAttribute="leadingMargin" id="KrW-ET-On7"/>
+                            <constraint firstItem="SZW-xn-krp" firstAttribute="trailing" secondItem="5fc-mp-M6f" secondAttribute="trailingMargin" id="Se9-pf-egx"/>
+                            <constraint firstItem="SZW-xn-krp" firstAttribute="top" secondItem="5fc-mp-M6f" secondAttribute="top" constant="20" symbolic="YES" id="fBH-vb-Biu"/>
+                            <constraint firstItem="jve-SJ-0oT" firstAttribute="top" secondItem="O82-N5-5q4" secondAttribute="bottom" constant="8" symbolic="YES" id="qYB-M2-cDd"/>
+                            <constraint firstItem="37d-gV-HRU" firstAttribute="top" secondItem="jve-SJ-0oT" secondAttribute="bottom" constant="8" symbolic="YES" id="rza-2L-scS"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="FAQ" id="V2M-mK-r0x"/>
                     <connections>
-                        <outlet property="faqSectionStackView" destination="L55-4X-0C8" id="Wt9-9c-HfV"/>
                         <outlet property="faqTextView" destination="SZW-xn-krp" id="1Rn-Bn-7xE"/>
+                        <outlet property="tableView" destination="jve-SJ-0oT" id="QIh-W9-0t8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wd0-Tn-J8M" userLabel="First Responder" sceneMemberID="firstResponder"/>
