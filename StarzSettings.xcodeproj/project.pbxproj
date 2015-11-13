@@ -14,8 +14,8 @@
 		AF4EE0D61BF4F0C2004FDE95 /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4EE0D51BF4F0C2004FDE95 /* FAQViewController.swift */; };
 		AF4EE0D81BF4F282004FDE95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF4EE0D71BF4F282004FDE95 /* Assets.xcassets */; };
 		AF4EE0DC1BF5063B004FDE95 /* StarzLegal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF4EE0DB1BF5063B004FDE95 /* StarzLegal.framework */; };
-		AF4EE0E11BF506A8004FDE95 /* StarzLegal.framework.dSYM in Copy Files (1 item) */ = {isa = PBXBuildFile; fileRef = AF4EE0E01BF506A8004FDE95 /* StarzLegal.framework.dSYM */; };
-		AF4EE0E51BF508CD004FDE95 /* Alamofire.framework.dSYM in Copy Files (1 item) */ = {isa = PBXBuildFile; fileRef = AF4EE0E41BF508CD004FDE95 /* Alamofire.framework.dSYM */; };
+		AF4EE0EA1BF50FA0004FDE95 /* Alamofire.framework.dSYM in Copy Files (1 item) */ = {isa = PBXBuildFile; fileRef = AF4EE0E81BF50FA0004FDE95 /* Alamofire.framework.dSYM */; };
+		AF4EE0EB1BF50FA0004FDE95 /* StarzLegal.framework.dSYM in Copy Files (1 item) */ = {isa = PBXBuildFile; fileRef = AF4EE0E91BF50FA0004FDE95 /* StarzLegal.framework.dSYM */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,10 +23,10 @@
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
-			dstSubfolderSpec = 7;
+			dstSubfolderSpec = 16;
 			files = (
-				AF4EE0E11BF506A8004FDE95 /* StarzLegal.framework.dSYM in Copy Files (1 item) */,
-				AF4EE0E51BF508CD004FDE95 /* Alamofire.framework.dSYM in Copy Files (1 item) */,
+				AF4EE0EA1BF50FA0004FDE95 /* Alamofire.framework.dSYM in Copy Files (1 item) */,
+				AF4EE0EB1BF50FA0004FDE95 /* StarzLegal.framework.dSYM in Copy Files (1 item) */,
 			);
 			name = "Copy Files (1 item)";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,6 +45,8 @@
 		AF4EE0DB1BF5063B004FDE95 /* StarzLegal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StarzLegal.framework; path = Carthage/Build/tvOS/StarzLegal.framework; sourceTree = "<group>"; };
 		AF4EE0E01BF506A8004FDE95 /* StarzLegal.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = StarzLegal.framework.dSYM; path = Carthage/Build/tvOS/StarzLegal.framework.dSYM; sourceTree = "<group>"; };
 		AF4EE0E41BF508CD004FDE95 /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Alamofire.framework.dSYM; path = Carthage/Build/tvOS/Alamofire.framework.dSYM; sourceTree = "<group>"; };
+		AF4EE0E81BF50FA0004FDE95 /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Alamofire.framework.dSYM; path = Carthage/Build/tvOS/Alamofire.framework.dSYM; sourceTree = "<group>"; };
+		AF4EE0E91BF50FA0004FDE95 /* StarzLegal.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = StarzLegal.framework.dSYM; path = Carthage/Build/tvOS/StarzLegal.framework.dSYM; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,8 @@
 		AF4EE0B81BF4EEC4004FDE95 = {
 			isa = PBXGroup;
 			children = (
+				AF4EE0E81BF50FA0004FDE95 /* Alamofire.framework.dSYM */,
+				AF4EE0E91BF50FA0004FDE95 /* StarzLegal.framework.dSYM */,
 				AF4EE0C31BF4EEC4004FDE95 /* StarzSettings */,
 				AF4EE0DD1BF5063E004FDE95 /* Frameworks */,
 				AF4EE0C21BF4EEC4004FDE95 /* Products */,
